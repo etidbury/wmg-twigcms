@@ -433,7 +433,7 @@ fse.removeSync(program.destination);
 
 const apiURL = "http://" + path.join(path.parse(program.host).base, "project", program.project, "spaces");
 
-console.log(getStdOut("Loading URL: "+chalk.grey("<a href='#'>"+apiURL+"</a>")));
+console.log(getStdOut("Loading URL: "+chalk.grey(apiURL)));
 
 const loadAPISpinner = ora("Loading Space Data... " + chalk.grey(apiURL)).start();
 
